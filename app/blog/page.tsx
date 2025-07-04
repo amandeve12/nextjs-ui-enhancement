@@ -1,13 +1,11 @@
-//SSR because we put    cache: "no-store", 
+// this is an ssg page
+
 
 export default async function BlogPage() {
-  const res = await fetch("https://dummyjson.com/todos", {
-    cache: "no-store", 
-  });
-
+  const res = await fetch("https://dummyjson.com/todos");
   const data = await res.json();
 
-  console.log("SSR - dynamic data fetch", data);
+  console.log("static generate data", data);
 
   const todos = data.todos;
   const mydata = "this is my data";
