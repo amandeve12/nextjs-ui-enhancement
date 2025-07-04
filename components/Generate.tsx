@@ -1,13 +1,14 @@
 type User = {
-id:Number,
+id:number,
 name:string
 }
-type Todo = {
-    id:Number,
-    todo:String,
-    completed:Boolean,
-    userId:number
-  }
+
+// type Todo = {
+//     id:number,
+//     todo:String,
+//     completed:Boolean,
+//     userId:number
+//   }
 
   function Generate(){
 
@@ -15,7 +16,7 @@ type Todo = {
 
 
 
-function fn1(a:string, n:Number, obj:User){
+function fn1(a:string, n:number, obj:User){
 
     return a + n + obj.name
 }
